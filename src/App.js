@@ -3,11 +3,11 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
-import AddProduct from './Pages/AddProduct/AddProduct';
 import Home from "./Pages/Home/Home/Home";
 import Products from "./Pages/Home/Products/Products";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
+import Purchase from "./Pages/Purchase/Purchase";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
             <Route path="/products">
             <Products></Products>
             </Route>
-            <Route path="/addService">
-            <AddProduct></AddProduct>
+            <Route path="/purchase/:productId">
+              <Purchase></Purchase>
             </Route>
             <Route path="/register">
             <Register></Register>

@@ -24,7 +24,7 @@ const AllServices = () => {
                                 <h2>{products?.name}</h2>
                                 <p>{products?.description}</p>
                                 <h3 className="text-primary">Price :{products?.price}</h3>
-                                <Link to={`/booking/${products._id}`}>
+                                <Link to={`/purchase/${products._id}`}>
                                     <button className="btn btn-dark">Purchase</button>
                                 </Link>
                             </div>
