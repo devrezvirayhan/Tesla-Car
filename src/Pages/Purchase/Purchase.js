@@ -91,9 +91,7 @@ const Purchase = () => {
                 className="p-2 m-2 w-100"
               />
               <br />
-
-              {errors.exampleRequired && <span>This field is required</span>}
-
+              {errors.exampleRequired && <span>This field is Require</span>}
               <input
                 type="submit"
                 value="Order Now"
