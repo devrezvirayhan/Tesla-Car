@@ -1,3 +1,8 @@
 .left{
     float: left;
 }
+#resize{
+    resize: none;
+    border: 2px solid rgb(240, 75, 46);
+    border-radius: 10px;
+}

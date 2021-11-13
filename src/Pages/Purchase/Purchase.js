@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
 import Navbar from './../Home/Navbar/Navbar';
+import './Purchase.css';
 
 const Purchase = () => {
   const { productId } = useParams();
@@ -53,37 +54,36 @@ const Purchase = () => {
           </div>
           <div className="col-md-6">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                {...register("name")}
+              <input disabled
+                {...register("name",{required:true})}
                 defaultValue={service?.name}
                 className="p-2 m-2 w-100"
               />
               <br />
               <input
                 {...register("date")}
-                // placeholder="Name"
+                placeholder="data"
                 type="date"
                 className="p-2 m-2 w-100"
               />
               <br />
-              <input
-                {...register("comments")}
-                placeholder="comments"
-                className="p-2 m-2"
-                className="p-2 m-2 w-100"
-              />
-              <br />
-
-              <input
-                {...register("price",)}
+              <input disabled
+                {...register("price",{required:true})}
                 defaultValue={service?.price}
                 className="p-2 m-2"
                 className="p-2 m-2 w-100"
               />
               <br />
-              <input
-                {...register("image",)}
-                defaultValue={service?.image}
+              <input disabled
+                {...register("image", { required: true })}
+                defaultValue={service?.img}
+                className="p-2 m-2"
+                className="p-2 m-2 w-100"
+              />
+              <br/>
+              <textarea id="resize" rows="5" cols="50"
+                {...register("dis",{ required: true })}
+                defaultValue={service?.description}
                 className="p-2 m-2"
                 className="p-2 m-2 w-100"
               />
