@@ -30,6 +30,9 @@ const Navbar = () => {
             <Link to="/products">
             <Button style={{textDecoration:'none', color:"white"}} color="inherit">More Products</Button>
             </Link>
+            <Link to="/myorder">
+            <Button style={{textDecoration:'none', color:"white"}} color="inherit">MyOrders</Button>
+            </Link>
             {
               user?.email ? 
               <Button onClick={logout} color="inherit">Logout</Button>

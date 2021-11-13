@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home/Home";
 import Products from "./Pages/Home/Products/Products";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
+import MyOrder from './Pages/MyOrder/MyOrder';
 import Purchase from "./Pages/Purchase/Purchase";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/products">
             <Products></Products>
+            </Route>
+            <Route path="/myorder">
+            <MyOrder></MyOrder>
             </Route>
             <Route path="/purchase/:productId">
               <Purchase></Purchase>

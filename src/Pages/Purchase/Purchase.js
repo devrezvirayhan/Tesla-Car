@@ -24,14 +24,15 @@ const Purchase = () => {
   const onSubmit = (data) => {
     data.email = email;
     fetch('http://localhost:7000/confromOrder', {
-      method:"POST",
-      headers:{"content-type": 'applacation/json'},
-      body:JSON.stringify(data),
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
     })
-    .then(res => res.json())
-    .then(result => console.log(result))
+      .then(res => res.json())
+      .then(result => console.log(result))
     console.log(data)
   };
+
 
   return (
 
@@ -39,7 +40,7 @@ const Purchase = () => {
       <div>
         <Navbar></Navbar>
       </div>
-      <h1>Confirm Order</h1> 
+      <h1>Confirm Order</h1>
       <div className="booking-container">
         <div className="row container">
           <div className="col-md-6">
