@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
-import Navbar from './../Home/Navbar/Navbar';
-import './Purchase.css';
+import Navbar from "../Home/Navbar/Navbar";
+
 
 const Purchase = () => {
   const { productId } = useParams();
   const [service, setService] = useState({});
-  const email = sessionStorage.getItem("email");
 
+  const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`http://localhost:7000/singleProduct/${productId}`)
+    fetch(`http://localhost:5000/singleProduct/${productId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -19,29 +19,31 @@ const Purchase = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     data.email = email;
-    fetch('http://localhost:7000/confromOrder', {
+    data.status = "pending";
+
+    fetch("http://localhost:5000/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
     })
-      .then(res => res.json())
-      .then(result => console.log(result))
-    console.log(data)
+      .then((res) => res.json())
+      .then((result) => console.log(result));
+    console.log(data);
   };
 
-
   return (
-
     <div>
       <div>
         <Navbar></Navbar>
       </div>
-      <h1>Confirm Order</h1>
+      <h1>This is Booking Plause Confram Now</h1>
+
       <div className="booking-container">
         <div className="row container">
           <div className="col-md-6">
@@ -50,12 +52,12 @@ const Purchase = () => {
             </div>
             <h2>{service?.name}</h2>
             <p className="text-start">{service?.description}</p>
-            <h1> Price: {service?.price}</h1>
+            <h1>Price: {service?.price}</h1>
           </div>
           <div className="col-md-6">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <input disabled
-                {...register("name",{required:true})}
+              <input
+                {...register("name", { required: true })}
                 defaultValue={service?.name}
                 className="p-2 m-2 w-100"
               />
@@ -67,27 +69,29 @@ const Purchase = () => {
                 className="p-2 m-2 w-100"
               />
               <br />
-              <input disabled
-                {...register("price",{required:true})}
+              <input
+                {...register("price", { required: true })}
                 defaultValue={service?.price}
                 className="p-2 m-2"
                 className="p-2 m-2 w-100"
               />
               <br />
-              <input disabled
+
+              <input
                 {...register("image", { required: true })}
                 defaultValue={service?.img}
                 className="p-2 m-2"
                 className="p-2 m-2 w-100"
               />
-              <br/>
+              <br />
               <textarea id="resize" rows="5" cols="50"
-                {...register("dis",{ required: true })}
+                {...register("dis", { required: true })}
                 defaultValue={service?.description}
                 className="p-2 m-2"
                 className="p-2 m-2 w-100"
               />
               <br />
+
               {errors.exampleRequired && <span>This field is required</span>}
 
               <input

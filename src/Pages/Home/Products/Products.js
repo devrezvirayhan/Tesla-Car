@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 
 const AllServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:7000/addProducts")
+        fetch("http://localhost:5000/addProducts")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, []);
 
     return (
-        <div className="p-3">
+       <div>
+           <div>
+               <Navbar></Navbar>
+           </div>
+            <div className="p-3">
             <h1>Our Products</h1>
             <div className="services d-flex justify-content-center">
                 <div className="row container">
@@ -33,6 +38,7 @@ const AllServices = () => {
                 </div>
             </div>
         </div>
+       </div>
     );
 };
 
