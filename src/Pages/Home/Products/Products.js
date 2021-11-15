@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AdminHomeAddProduct from "../../Admin/AdminAddProduct/AdminHomeAddProduct/AdminHomeAddProduct";
 
 
 const AllServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/addProducts")
+        fetch("https://aqueous-badlands-48923.herokuapp.com/addProducts")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, []);
@@ -35,6 +36,9 @@ const AllServices = () => {
                     ))}
                 </div>
             </div>
+        </div>
+        <div>
+            <AdminHomeAddProduct></AdminHomeAddProduct>
         </div>
        </div>
     );

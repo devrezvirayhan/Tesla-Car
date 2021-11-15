@@ -10,7 +10,7 @@ const MyOrder = () => {
   const [control, setControl] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrders/${email}`)
+    fetch(`https://aqueous-badlands-48923.herokuapp.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [control]);
@@ -19,7 +19,7 @@ const MyOrder = () => {
   // DELETE BUTTON HANDLE Delete
 
    const handleDelete =(id)=>{
-     fetch(`http://localhost:5000/deleteOrder/${id}`,{
+     fetch(`https://aqueous-badlands-48923.herokuapp.com/deleteOrder/${id}`,{
        method:'DELETE'
      })
      .then((res) => res.json())

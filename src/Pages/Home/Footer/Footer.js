@@ -3,6 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
+        //Footer Page 
         <div className="bg-dark text-white mt-2 p-2">
             <Container>
                 <Grid container>

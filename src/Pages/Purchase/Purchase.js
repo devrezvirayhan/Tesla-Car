@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
+import Footer from "../Home/Footer/Footer";
 import Navbar from "../Home/Navbar/Navbar";
 
 
@@ -10,7 +11,7 @@ const Purchase = () => {
 
   const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${productId}`)
+    fetch(`https://aqueous-badlands-48923.herokuapp.com/singleProduct/${productId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -27,7 +28,7 @@ const Purchase = () => {
     data.email = email;
     data.status = "pending";
 
-    fetch("http://localhost:5000/confirmOrder", {
+    fetch("https://aqueous-badlands-48923.herokuapp.com/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
@@ -100,6 +101,9 @@ const Purchase = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div>
+        <Footer></Footer>
       </div>
     </div>
   );

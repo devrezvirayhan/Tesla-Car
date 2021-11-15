@@ -10,7 +10,7 @@ const ProductPurchase = () => {
 
   const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`http://localhost:5000/singleallProduct/${PurproductId}`)
+    fetch(`https://aqueous-badlands-48923.herokuapp.com/singleallProduct/${PurproductId}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -27,7 +27,7 @@ const ProductPurchase = () => {
     data.email = email;
     data.status = "pending";
 
-    fetch("http://localhost:5000/confirallmOrder", {
+    fetch("https://aqueous-badlands-48923.herokuapp.com/confirallmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -5,7 +5,7 @@ import Navbar from "../Home/Navbar/Navbar";
 const Product = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/addallProduct")
+        fetch("https://aqueous-badlands-48923.herokuapp.com/addallProduct")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, []);

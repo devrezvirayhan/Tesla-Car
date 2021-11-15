@@ -2,9 +2,9 @@
 PALO ALTO, Calif. – Tesla Motors, Inc. (Nasdaq: TSLA) today announced its preliminary unaudited financial results for the quarter and year ended December 31, 2010. Revenues for the fourth quarter of 2010 were $36.3 million, a 16% increase from the $31.2 million reported in the prior quarter. Gross margin improved to 31%, up from 30% for the prior quarter
 
 
-## [Live Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
-### [Client Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
-#### [Server Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
+## [Live Site Ripo Link](https://tesla-car-16994.web.app/)
+### [Client Site Ripo Link](https://github.com/programming-hero-web-course-4/niche-website-client-side-rezvirayhan2002)
+#### [Server Site Ripo Link](https://github.com/programming-hero-web-course-4/niche-website-server-side-rezvirayhan2002)
 
 
 In the project directory, you can run:
@@ -13,6 +13,8 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.

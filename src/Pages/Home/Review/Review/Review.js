@@ -9,7 +9,7 @@ const Review = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/names', data)
+        axios.post('https://aqueous-badlands-48923.herokuapp.com/names', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added SuccessFully')

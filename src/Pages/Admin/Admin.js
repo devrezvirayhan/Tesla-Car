@@ -41,6 +41,7 @@ function Admin(props) {
     <div>
       <Toolbar />
 
+      <Link to="/"><Button color="inherit">Home</Button></Link> <br/>
       <Link to={`${url}`}><Button color="inherit">DashBord</Button></Link> <br/>
       <Link to={`${url}/addProducts`}><Button color="inherit">Add Products</Button></Link> <br/>
       <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link> <br/>

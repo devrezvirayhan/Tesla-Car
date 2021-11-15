@@ -4,7 +4,7 @@ const ReviewHome = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/names")
+        fetch("https://aqueous-badlands-48923.herokuapp.com/names")
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, []);
@@ -23,7 +23,7 @@ const ReviewHome = () => {
                                  <div className="services-img ">
                                  </div>
                                  <h2>{products?.name}</h2>
-                                 <h3>{products?.review}</h3>
+                                 <h4>{products?.review}</h4>
                                  <p>{products?.Discptrion}</p>
                              </div>
                          </div>
