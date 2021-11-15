@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import Footer from "../Home/Footer/Footer";
 import Navbar from "../Home/Navbar/Navbar";
 
 const MyOrder = () => {
@@ -61,6 +62,9 @@ const MyOrder = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <Footer></Footer>
       </div>
     </div>
   );
