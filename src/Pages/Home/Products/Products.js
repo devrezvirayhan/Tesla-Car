@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 
 
 const AllServices = () => {
@@ -14,7 +13,6 @@ const AllServices = () => {
     return (
        <div>
            <div>
-               <Navbar></Navbar>
            </div>
             <div className="p-3">
             <h1>Our Products</h1>

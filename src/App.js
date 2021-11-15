@@ -3,9 +3,12 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
+import Admin from "./Pages/Admin/Admin";
 import Home from "./Pages/Home/Home/Home";
 import Products from "./Pages/Home/Products/Products";
+import Review from './Pages/Home/Review/Review/Review';
 import Login from "./Pages/Login/Login/Login";
+import PrivetRoute from './Pages/Login/PrivetRoute/PrivetRoute';
 import Register from "./Pages/Login/Register/Register";
 import MyOrder from './Pages/MyOrder/MyOrder';
 import Purchase from "./Pages/Purchase/Purchase";
@@ -22,15 +25,21 @@ function App() {
             <Route path="/login">
             <Login></Login>
             </Route>
-            <Route path="/products">
+            <PrivetRoute path="/products">
             <Products></Products>
-            </Route>
-            <Route path="/myorder">
+            </PrivetRoute>
+            <PrivetRoute path="/myorder">
             <MyOrder></MyOrder>
-            </Route>
-            <Route path="/purchase/:productId">
+            </PrivetRoute>
+            <PrivetRoute path="/admin">
+            <Admin></Admin>
+            </PrivetRoute>
+            <PrivetRoute path="/review">
+            <Review></Review>
+            </PrivetRoute>
+            <PrivetRoute path="/purchase/:productId">
               <Purchase></Purchase>
-            </Route>
+            </PrivetRoute>
             <Route path="/register">
             <Register></Register>
             </Route>

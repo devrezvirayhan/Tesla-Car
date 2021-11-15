@@ -1,0 +1,17 @@
+.admin-area {
+    background: rgb(99, 97, 97);
+    color: white;
+    height: 100vh;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+  .admin {
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .admin:hover {
+    background-color: black;
+    color: white;
+  }
