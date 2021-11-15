@@ -42,8 +42,9 @@ function App() {
             <PrivetRoute path="/purchase/:productId">
               <Purchase></Purchase>
             </PrivetRoute>
-
-
+            <PrivetRoute path="/review">
+              <Review></Review>
+            </PrivetRoute>
             <PrivetRoute path="/prosuctpurchase/:PurproductId">
               <ProductPurchase></ProductPurchase>
             </PrivetRoute>

@@ -1,8 +1,11 @@
-# Getting Started with Create React App
+# Tesla Car Our New WebSite
+PALO ALTO, Calif. – Tesla Motors, Inc. (Nasdaq: TSLA) today announced its preliminary unaudited financial results for the quarter and year ended December 31, 2010. Revenues for the fourth quarter of 2010 were $36.3 million, a 16% increase from the $31.2 million reported in the prior quarter. Gross margin improved to 31%, up from 30% for the prior quarter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## [Live Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
+### [Client Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
+#### [Server Site Ripo Link](https://classroom.github.com/a/afIj_UMn)
+
 
 In the project directory, you can run:
 
@@ -19,52 +22,25 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## `Tesla Roadster drives environmental responsibility during Berlin Fashion Week`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+BERLIN, Germany –The Tesla Roadster will drive the message of environmental responsibility at Berlin Fashion Week’s “Green Avantgarde,“ which showcases some of the world’s most exciting and environmentally friendly designers.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
+### `Tesla Motors January 18, 2011`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Model S, engineered from the ground as an EV, is meticulously designed for superior aerodynamics, stability and handling, crash safety, performance and range. Before Model S enters production it will have been thoroughly tested using both computer simulations and test vehicles. Tesla will complete two vehicle testing phases, Alpha and Beta. The Alpha phase began in 2010.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Tesla Car
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As part of our European sales launch, Tesla Motors participated as an exhibitor at Top Marques Monaco April 24th - 27th where we met many of our first EU ...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### News
+Tesla FSD Beta continues to prove its reliability. The newest technology allowed a Tesla car to independently make an unprotected turn in downtown San Francisco with obstruction from a truck, which would have caused difficulty even for an experienced driver.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+There is a lot of controversies when it comes to Tesla's FSD Beta technology. On the one hand, this is a new technology that has not yet been fully developed and must go through deep and extensive testing by responsible drivers. On the other hand, this is the technology of the future, which will ultimately allow cars to be fully autonomous, and do not require a human driver to drive. Be that as it may, this issue will cause controversy for a long time to come. However, the facts and real-life experience of drivers with FSD Beta can help clarify concerns.

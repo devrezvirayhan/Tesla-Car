@@ -4,6 +4,7 @@ import Bonous from '../Bonous/Bonous';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Products from '../Products/Products';
+import ReviewHome from '../Review/ReviewHome/ReviewHome';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
            <Banner></Banner>
            <Products></Products>
            <Bonous></Bonous>
+           <ReviewHome></ReviewHome>
            <Footer></Footer>
         </div>
     );
