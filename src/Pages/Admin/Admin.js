@@ -19,6 +19,7 @@ import * as React from 'react';
 import {
   Link, Route, Switch, useRouteMatch
 } from "react-router-dom";
+import useAuth from './../../hooks/useAuth';
 import AddDashBord from './AddDashBord/AddDashBord';
 import AdminAddProduct from './AdminAddProduct/AdminAddProduct';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
@@ -29,6 +30,7 @@ function Admin(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   let { path, url } = useRouteMatch();
+  const {admin} = useAuth()
 
 
   const handleDrawerToggle = () => {
@@ -63,7 +65,8 @@ function Admin(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <div>
+       <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -145,6 +148,7 @@ function Admin(props) {
        
       </Box>
     </Box>
+    </div>
   );
 }
 

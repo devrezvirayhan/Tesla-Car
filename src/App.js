@@ -11,6 +11,7 @@ import Login from "./Pages/Login/Login/Login";
 import PrivetRoute from './Pages/Login/PrivetRoute/PrivetRoute';
 import Register from "./Pages/Login/Register/Register";
 import MyOrder from './Pages/MyOrder/MyOrder';
+import Product from './Pages/Product/Product';
 import Purchase from "./Pages/Purchase/Purchase";
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
             </PrivetRoute>
             <PrivetRoute path="/purchase/:productId">
               <Purchase></Purchase>
+            </PrivetRoute>
+            <PrivetRoute path="/product">
+              <Product></Product>
             </PrivetRoute>
             <Route path="/register">
             <Register></Register>

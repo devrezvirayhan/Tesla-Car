@@ -22,7 +22,12 @@ const MakeAdmin = () => {
         })
             .then(res => res.json())
             .then(data => {
+                if(data){
                     console.log(data);
+                    setEmail('')
+                    setSuccess(true)
+
+                }
                 
             })
 
@@ -37,10 +42,10 @@ const MakeAdmin = () => {
                     label="Email"
                     type="email"
                     onBlur={handleOnBlur}
-                    variant="standard" /> <br/>
+                    variant="outlined" /> <br/>
                 <Button className="mt-2" type="submit" variant="contained">Make Admin</Button>
             </form>
-            {success && <Alert severity="success">Make Admin successfully!</Alert>}
+            {success && <Alert severity="success">Make Admin successfully! Thank You....</Alert>}
         </div>
     );
 };

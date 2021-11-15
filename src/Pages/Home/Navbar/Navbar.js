@@ -29,14 +29,14 @@ const Navbar = () => {
               <Button style={{ textDecoration: 'none', color: "white" }} color="inherit">Tesla Car</Button>
             </Link>
           </Typography>
-          <Link to="/products">
-            <Button style={{ textDecoration: 'none', color: "white" }} color="inherit">More Products</Button>
-          </Link>
           <Link to="/review">
             <Button style={{ textDecoration: 'none', color: "white" }} color="inherit">Review</Button>
           </Link>
           <Link to="/myorder">
             <Button style={{ textDecoration: 'none', color: "white" }} color="inherit">MyOrders</Button>
+          </Link>
+          <Link to="/product">
+            <Button style={{ textDecoration: 'none', color: "white" }} color="inherit">Our Product</Button>
           </Link>
 
           <Button style={{ textDecoration: 'none', color: "black" }} color="inherit">
